@@ -37,7 +37,7 @@ namespace LojaWebBase
                 Console.WriteLine($"Gostaria de seguir para a forma de pagamento? (S ou N) ");
                 string Pag = Console.ReadLine();
                 // Forma de pagamento apv
-                if (Pag == "S")
+                if (Pag == "S" || Pag == "s")
                 {
                     Pagamento();
                     Console.Write("Escolha a forma de pagamento: ");
