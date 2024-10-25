@@ -81,17 +81,23 @@ namespace LojaWebBase
 
         static void Jogos()
         {
-            Console.WriteLine("1 - The Legend of Zelda: Breath of the Wild");
-            Console.WriteLine("2 - Red Dead Redemption 2");
-            Console.WriteLine("3 - God of War");
-            Console.WriteLine("4 - Minecraft");
-            Console.WriteLine("5 - The Witcher 3: Wild Hunt");
-            Console.WriteLine("6 - Among Us");
-            Console.WriteLine("7 - Fortnite (Pacotes de conteúdo)");
-            Console.WriteLine("8 - Dark Souls III");
-            Console.WriteLine("9 - Animal Crossing: New Horizons");
-            Console.WriteLine("10 - Horizon Zero Dawn");
-            Console.WriteLine(". . .");
+            string[] Jogo = new string[10] {
+                 "1 - The Legend of Zelda: Breath of the Wild",
+                 "2 - Red Dead Redemption 2",
+                 "3 - God of War",
+                 "4 - Minecraft",
+                 "5 - The Witcher 3: Wild Hunt",
+                 "6 - Among Us",
+                 "7 - Fortnite (Pacotes de conteúdo)",
+                 "8 - Dark Souls III",
+                 "9 - Animal Crossing: New Horizons",
+                 "10 - Horizon Zero Dawn",
+                };
+
+            for (int i = 0; i < Jogo.Length; i++)
+            {
+                Console.WriteLine(Jogo[i]);
+            }
         }
 
         static void Pagamento()
